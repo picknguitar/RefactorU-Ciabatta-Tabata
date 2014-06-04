@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Tobata Phonegap Intro</title>
+    </head>
+    <body class="background-body">
+        <div class="logo">
+            <a href="index.html" title="Ciabatta Home"><img src="http://png-5.vector.me/files/images/4/2/424404/bread_thumb"></a>
+            <p>A High Intensity Interval Training App</p>   
+        </div>
+
+        <div class="tabata-head">
+            <h2>1. Select a number of exercises</h2>
+        </div>
+
+        <div id="exercise-num">
+            <ul>
+                <li><a href="#" role="button" class="btn btn-default num-btns">1</a></li>
+                <li><a href="#" role="button" class="btn btn-default num-btns">2</a></li>
+                <li><a href="#" role="button" class="btn btn-default num-btns">3</a></li>
+                <li><a href="#" role="button" class="btn btn-default num-btns">4</a></li>
+                <li><a href="#" role="button" class="btn btn-default num-btns">5</a></li>
+                <li><a href="#" role="button" class="btn btn-default num-btns">6</a></li>
+            </ul>
+            
+        </div>
+
+        <div class="tabata-head">
+            <h2>2. Select your workout</h2>
+        </div>
+
+        <div class="btn-container">
+            <a href="#" role="button" class="btn btn-default btn-lg btn-block get-started-btn all-btns" id="random-upper-btn">Upper Body Workout</a>
+
+            <div>
+                <div id="upper-random"></div>                
+            </div>
+
+            <a href="#" role="button" class="btn btn-default btn-lg btn-block get-started-btn all-btns" id="random-lower-btn">Lower Body Workout</a>
+
+            <div id="lower-random"></div>
+
+            <a href="#" role="button" class="btn btn-default btn-lg btn-block get-started-btn all-btns" id="random-cardio-btn">Cardio Workout</a>
+
+            <div id="cardio-random"></div>
+
+            <a href="#" role="button" class="btn btn-default btn-lg btn-block get-started-btn all-btns" id="random-core-btn">Core Workout</a>
+
+            <div id="core-random"></div>
+
+            <a href="#" role="button" class="btn btn-default btn-lg btn-block get-started-btn all-btns" id="random-total-btn">Total Body Workout</a>
+
+            <div id="total-random"></div>
+
+        </div>
+
+<!-- START OF HANDLEBARS TEMPLATES -->
+        
+        
+
+        <script type="text/x-handlebars-template" id="random-workout-template">
+            <div class="added-list-border">
+                <p class="exercise-list-style-attr"> {{name}} </p>
+            </div>
+        </script>
+
+<!-- END OF HANDLEBARS TEMPLATES -->
+
+        
+        
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.2/handlebars.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/moment.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="data/data.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+            </script>
+    </body>
+</html>

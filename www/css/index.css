@@ -1,0 +1,247 @@
+h2 {
+	margin: 0 15px;
+}
+
+h3 {
+	font-size: 36px;
+}
+
+.background-body {
+	background-color: lightblue;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.logo h1 {
+    font-size: 60px;
+    letter-spacing: 0.2em;
+}
+
+.logo p {
+	font-size: 24px;
+    margin-top: 15px;
+
+}
+
+.btn-container {
+	margin: 35px auto;
+	width: 70%;
+	text-align: center;
+	font-size: 48px;
+}
+
+.get-started-btn, .num-btns {
+	margin: 16px 0;
+	border: 1px solid dodgerblue;
+	border-radius: 7px;
+	background-color: azure;	
+}
+
+.num-btns {
+	border-radius: 50px;
+	font-size: 28px;
+}
+
+.tabata-head, #tabata-def {
+	font-size: 18px;
+	text-align: center;
+}
+
+#exercise-num ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+}
+
+#exercise-num li {
+	display: inline;
+	text-decoration: none;
+	padding: 0 10px;
+}
+
+.exercise-list-style-attr {
+	font-size: 20px;
+}
+
+.add-own-btn, .description-btn, .remove-btn {
+	height: 20px;
+	font-size: 12px;
+}
+
+.added-exercises-border {
+	border-top: 3px solid sandybrown;
+	border-bottom: 3px solid sandybrown;
+	padding-top: 8px;
+	display: none;
+	border-radius: 7px;
+	width: 95%;
+	margin: 28px auto;
+}
+
+#added-exercises {
+	position: relative;
+	left: 45px;
+}
+
+#added-exercises p {
+	text-decoration: underline;
+}
+
+.added-exer-template {
+	margin-top: 9px;
+	list-style-type: none;
+}
+
+.exercise-description {
+	border: 1px solid sandybrown;
+	border-radius: 7px;
+	display: none;
+	padding: 10px 5px;
+	font-size: 16px;
+	margin-bottom: 12px;
+}
+
+.ready-btn {
+	position: relative;
+	left: 311px;
+	text-align: center;
+	height: 26px; 
+	margin: 10px 0;
+}
+
+.previous-workout {
+	border-top: 3px solid sandybrown;
+	border-bottom: 3px solid sandybrown;
+	border-radius: 7px;
+	font-size: 28px;
+	margin: 30px 15px;
+	text-align: center;
+}
+
+.previous-workout span {
+	font-size: 44px;
+	color: dodgerblue;
+}
+
+
+/*STOPWATCH CSS --------------------------------------------*/
+
+*,
+*:before,
+*:after, {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.timer-container {
+	width: 95%;
+	border-top: 3px solid sandybrown;
+	border-bottom: 3px solid sandybrown;
+	border-radius: 7px;
+	padding: 25px 0;
+	margin: 30px auto;
+}
+
+.stopwatch {
+	/*border: 3px solid black;*/
+    text-align: center;
+    /*font-family: Helvetica, Arial, sans-serif;*/
+    /*font-size: 2rem;*/
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.container {
+	text-align: center;
+    /*background: sandybrown;*/
+    border: 14px solid sandybrown;
+	border-radius: 50%;
+	font-size: 200px;
+	font-weight: 500;
+    margin: 0 auto;
+    /*padding: 0.4em;*/
+    width: 100%;
+    height: 100%;
+    /*color: dodgerblue;*/
+}
+
+.button {
+	font-size: 22px;
+    background: azure;
+    color: black;
+    border: 1px solid #BADA55;
+    border-radius: 7px;
+    /*cursor: pointer;*/
+    /*display: inline-flex;*/
+    /*flex-direction: row-reverse;*/
+    /*justify-content: space-between;*/
+    /*margin-top: 0.2em;*/
+    /*margin-right: 1%;*/
+    margin-top: 0.4em;
+    width: 48%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.button:hover
+{
+    background: #BADA55;
+    color: #BADA55;
+    font-weight: 900;
+    border: none;
+}
+
+.button:focus {
+	border: 1px solid #BADA55;
+	outline: 0.7px;
+}
+
+
+.button:nth-child(odd) {
+	border: 1px solid firebrick;
+    background: azure;
+    color: black;
+    margin-right: 0;
+}
+
+.button:nth-child(odd):hover {
+    background: firebrick;
+    color: firebrick;
+    font-weight: 900;
+    border: none;
+}
+
+.button:nth-child(odd):focus {
+	border: 1px solid firebrick;
+	outline: 0.7px;
+}
+
+.button:last-child {
+	border: 1px solid dodgerblue;
+    background: azure;
+    color: black;
+    margin-right: 0;
+}
+
+.button:last-child:hover {
+    background: dodgerblue;
+    color: dodgerblue;
+    font-weight: 900;
+    border: none;
+}
+
+.button:last-child:focus {
+	border: 1px solid dodgerblue;
+	outline: 0.7px;
+}
+
+
+
+
+
+

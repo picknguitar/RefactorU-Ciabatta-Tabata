@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Tobata Phonegap Intro</title>
+    </head>
+    <body class="background-body">
+        <div class="logo">
+            <a href="index.html" title="Ciabatta Home"><img src="http://png-5.vector.me/files/images/4/2/424404/bread_thumb"></a>
+            <p>A High Intensity Interval Training App</p>     
+        </div>
+
+        <div class="tabata-head">
+            <h2>Add from the lists below to customize your workout</h2> 
+        </div>
+
+        <div class="added-exercises-border">
+            <p id="added-exercises" class="exercise-list-style-attr">You have added the follwoing exercises:</p>
+            <button type="button" class="ready-btn">Ready to Workout!</button>
+        </div>
+
+        <div class="btn-container">
+            <a href="#" role="button" class="btn btn-default btn-lg btn-block get-started-btn all-btns" id="own-upper-btn">Upper Body Workout</a>
+            <div>
+                <div id="upper-own"></div>
+            </div>    
+
+            <a href="#" role="button" class="btn btn-default btn-lg btn-block get-started-btn all-btns" id="own-lower-btn">Lower Body Workout</a>
+
+            <div id="lower-own"></div>
+
+            <a href="#" role="button" class="btn btn-default btn-lg btn-block get-started-btn all-btns" id="own-cardio-btn">Cardio Workout</a>
+
+            <div id="cardio-own"></div>
+
+            <a href="#" role="button" class="btn btn-default btn-lg btn-block get-started-btn all-btns" id="own-core-btn">Core Workout</a>
+
+            <div id="core-own"></div>
+
+            <a href="#" role="button" class="btn btn-default btn-lg btn-block get-started-btn all-btns" id="own-total-btn">Total Body Workout</a>
+
+            <div id="total-own"></div> 
+        </div>       
+
+<!-- START OF HANDLEBARS TEMPLATES -->
+        
+        <script type="text/x-handlebars-template" id="own-workout-template">
+            <div class="added-list-border add-exercise">
+                <p class="exercise-list-style-attr"><span> {{name}} </span><button type="button" class="add-own-btn">add</button></p>
+            </div>
+        </script>
+
+        <script type="text/x-handlebars-template" id="added-workout-template">
+            <div class="added-exer-template">
+                <ul>
+                    {{name}} <button type="button" class="remove-btn">remove</button>
+                </ul>
+            </div>
+        </script>
+
+<!-- END OF HANDLEBARS TEMPLATES -->
+       
+        
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.2/handlebars.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/moment.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="data/data.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+            </script>
+    </body>
+</html>
