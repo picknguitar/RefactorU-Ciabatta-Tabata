@@ -188,8 +188,7 @@ h3 {
     transition: all 0.3s ease;
 }
 
-.button:hover
-{
+.button:hover {
     background: #BADA55;
     color: #BADA55;
     font-weight: 900;
